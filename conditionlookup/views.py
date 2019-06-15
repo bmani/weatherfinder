@@ -57,8 +57,8 @@ def getWeather(cityList, condition):
                 if findStateForCity(city[1], coord, "administrative_area_level_1") == True:
                     if weather["main"].lower() == condition.lower():
                         resultSet.append(
-                            {"city": city[0], "state": city[1], "temperature": round(weatherList["main"]["temp"]), 
-                            "wind": round(weatherList["wind"]["speed"])} )
+                            {"city": city[0], "state": city[1], "temperature": round(weatherList["main"]["temp"]),
+                             "wind": round(weatherList["wind"]["speed"])})
 
         except:
             print("City:{} has failed OWM lookup".format(city[0]))

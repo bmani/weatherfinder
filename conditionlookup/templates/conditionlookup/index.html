@@ -17,7 +17,8 @@
 
     <form action="" method="post">
         {% csrf_token %}
-        <table width="50%">
+        <table width="500px" align="center">
+
             <tr width="100%">
                 <td colspan=3>
                     <ul>
@@ -32,10 +33,10 @@
 
                 </td>
             </tr>
-            <tr>
-                <td width=25%>Enter Weather Condition: </td>
+            <tr width="100%">
+                <td width=60%>Enter Weather Condition: </td>
                 <td width=20%>{{form.condition}}</td>
-                <td width=60%><input type="submit" value="Submit"></td>
+                <td width=20%><input type="submit" value="Submit"></td>
             </tr>
         </table>
 

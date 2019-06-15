@@ -12,5 +12,5 @@ class WeatherForm(forms.Form):
 
         if(data.lower() not in (cond.lower() for cond in settings.VALID_CONDITIONS)):
             raise ValidationError(
-                "Weather consition should be one of the following: " + ", ".join(settings.VALID_CONDITIONS))
+                "Weather condition should be one of the following: " + ", ".join(settings.VALID_CONDITIONS))
         return data
